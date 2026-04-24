@@ -1,0 +1,44 @@
+# Netlify 배포 설정 (대안)
+# Cloudflare Pages 외에 Netlify로도 배포 가능.
+#
+# 참고:
+# - Netlify 무료: 빌드 100분/월, 대역폭 100GB
+# - Cloudflare Pages 무료: 빌드 500분/월, 대역폭 무제한
+# → 대량 페이지 사이트는 Cloudflare Pages 권장
+
+[build]
+  command = "npx next build"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# 한글 URL 인코딩 안정화
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# sitemap/RSS/robots 캐시 짧게 (업데이트 반영 빠르게)
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/feed.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+# 이미지 캐시 길게
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

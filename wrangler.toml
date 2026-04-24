@@ -1,0 +1,19 @@
+# Cloudflare Pages 배포 설정
+# 1) Cloudflare Pages 프로젝트 생성: https://dash.cloudflare.com/?to=/:account/pages
+# 2) Connect Git 또는 Direct Upload
+#
+# Direct Upload 시:
+#   npx wrangler pages deploy out --project-name=hasugu-jeonbuk
+#
+# Git 연결 시 빌드 설정:
+#   Build command: npx next build
+#   Build output directory: out
+#   Node version: 20
+
+name = "hasugu-jeonbuk"
+pages_build_output_dir = "out"
+compatibility_date = "2026-04-15"
+
+[vars]
+# 빌드 타임 환경 변수 (필요 시 추가)
+# NEXT_PUBLIC_DOMAIN = "https://example.com"

@@ -1,0 +1,1964 @@
+{
+  "after-001.jpg": {
+    "serviceType": "toilet",
+    "confidence": 1.0,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 1.0,
+      "sink": 0.0,
+      "drain": 0.0,
+      "leak": 0.0,
+      "aircon": 0.0,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "after-002.jpg": {
+    "serviceType": "toilet",
+    "confidence": 0.969,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.969,
+      "sink": 0.001,
+      "drain": 0.008,
+      "leak": 0.018,
+      "aircon": 0.005,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "after-003.jpg": {
+    "serviceType": "toilet",
+    "confidence": 0.991,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.991,
+      "sink": 0.0,
+      "drain": 0.002,
+      "leak": 0.002,
+      "aircon": 0.004,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "after-004.jpg": {
+    "serviceType": "toilet",
+    "confidence": 0.99,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.99,
+      "sink": 0.0,
+      "drain": 0.001,
+      "leak": 0.0,
+      "aircon": 0.008,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "after-005.jpg": {
+    "serviceType": "toilet",
+    "confidence": 1.0,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 1.0,
+      "sink": 0.0,
+      "drain": 0.0,
+      "leak": 0.0,
+      "aircon": 0.0,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "after-006.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.99,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.002,
+      "sink": 0.007,
+      "drain": 0.0,
+      "leak": 0.0,
+      "aircon": 0.99,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "after-007.jpg": {
+    "serviceType": "sink",
+    "confidence": 0.999,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.0,
+      "sink": 0.999,
+      "drain": 0.0,
+      "leak": 0.0,
+      "aircon": 0.0,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "after-008.jpg": {
+    "serviceType": "sink",
+    "confidence": 0.793,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.196,
+      "sink": 0.793,
+      "drain": 0.0,
+      "leak": 0.0,
+      "aircon": 0.011,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "after-009.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.981,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.002,
+      "sink": 0.013,
+      "drain": 0.0,
+      "leak": 0.003,
+      "aircon": 0.981,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "after-010.jpg": {
+    "serviceType": "sink",
+    "confidence": 0.573,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.415,
+      "sink": 0.573,
+      "drain": 0.0,
+      "leak": 0.004,
+      "aircon": 0.007,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "after-011.jpg": {
+    "serviceType": "sink",
+    "confidence": 0.834,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.088,
+      "sink": 0.834,
+      "drain": 0.0,
+      "leak": 0.028,
+      "aircon": 0.051,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "after-012.jpg": {
+    "serviceType": "sink",
+    "confidence": 0.593,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.095,
+      "sink": 0.593,
+      "drain": 0.001,
+      "leak": 0.075,
+      "aircon": 0.237,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "after-013.jpg": {
+    "serviceType": "sink",
+    "confidence": 0.995,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.0,
+      "sink": 0.995,
+      "drain": 0.002,
+      "leak": 0.0,
+      "aircon": 0.003,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "after-014.jpg": {
+    "serviceType": "sink",
+    "confidence": 0.808,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.011,
+      "sink": 0.808,
+      "drain": 0.073,
+      "leak": 0.001,
+      "aircon": 0.105,
+      "sewage": 0.002,
+      "stormwater": 0.001,
+      "manhole": 0.0
+    }
+  },
+  "before-001.jpg": {
+    "serviceType": "misc",
+    "confidence": 0.0,
+    "manual_review": true,
+    "error": "'cp949' codec can't encode character '\\u26a0' in position 12: illegal multibyte sequence"
+  },
+  "before-002.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.997,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.002,
+      "sink": 0.0,
+      "drain": 0.0,
+      "leak": 0.001,
+      "aircon": 0.997,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "before-003.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.576,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.0,
+      "sink": 0.003,
+      "drain": 0.419,
+      "leak": 0.001,
+      "aircon": 0.576,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "before-004.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.602,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.002,
+      "sink": 0.006,
+      "drain": 0.388,
+      "leak": 0.002,
+      "aircon": 0.602,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "before-005.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.697,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.002,
+      "sink": 0.0,
+      "drain": 0.239,
+      "leak": 0.063,
+      "aircon": 0.697,
+      "sewage": 0.0,
+      "stormwater": 0.001,
+      "manhole": 0.0
+    }
+  },
+  "before-006.jpg": {
+    "serviceType": "misc",
+    "confidence": 0.0,
+    "manual_review": true,
+    "error": "'cp949' codec can't encode character '\\u26a0' in position 12: illegal multibyte sequence"
+  },
+  "before-007.jpg": {
+    "serviceType": "toilet",
+    "confidence": 0.963,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.963,
+      "sink": 0.0,
+      "drain": 0.0,
+      "leak": 0.022,
+      "aircon": 0.002,
+      "sewage": 0.0,
+      "stormwater": 0.011,
+      "manhole": 0.0
+    }
+  },
+  "before-008.jpg": {
+    "serviceType": "toilet",
+    "confidence": 1.0,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 1.0,
+      "sink": 0.0,
+      "drain": 0.0,
+      "leak": 0.0,
+      "aircon": 0.0,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "before-009.jpg": {
+    "serviceType": "toilet",
+    "confidence": 0.995,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.995,
+      "sink": 0.001,
+      "drain": 0.0,
+      "leak": 0.001,
+      "aircon": 0.003,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "before-010.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.583,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.163,
+      "sink": 0.006,
+      "drain": 0.0,
+      "leak": 0.247,
+      "aircon": 0.583,
+      "sewage": 0.0,
+      "stormwater": 0.001,
+      "manhole": 0.0
+    }
+  },
+  "before-011.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.57,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.321,
+      "sink": 0.003,
+      "drain": 0.012,
+      "leak": 0.091,
+      "aircon": 0.57,
+      "sewage": 0.0,
+      "stormwater": 0.002,
+      "manhole": 0.0
+    }
+  },
+  "before-012.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.757,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.002,
+      "sink": 0.005,
+      "drain": 0.001,
+      "leak": 0.236,
+      "aircon": 0.757,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "before-013.jpg": {
+    "serviceType": "toilet",
+    "confidence": 0.538,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.538,
+      "sink": 0.002,
+      "drain": 0.0,
+      "leak": 0.263,
+      "aircon": 0.187,
+      "sewage": 0.001,
+      "stormwater": 0.01,
+      "manhole": 0.0
+    }
+  },
+  "before-014.jpg": {
+    "serviceType": "toilet",
+    "confidence": 0.909,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.909,
+      "sink": 0.001,
+      "drain": 0.0,
+      "leak": 0.081,
+      "aircon": 0.009,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "before-015.jpg": {
+    "serviceType": "toilet",
+    "confidence": 0.818,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.818,
+      "sink": 0.038,
+      "drain": 0.0,
+      "leak": 0.026,
+      "aircon": 0.119,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "before-016.jpg": {
+    "serviceType": "leak",
+    "confidence": 0.801,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.074,
+      "sink": 0.001,
+      "drain": 0.0,
+      "leak": 0.801,
+      "aircon": 0.039,
+      "sewage": 0.0,
+      "stormwater": 0.083,
+      "manhole": 0.001
+    }
+  },
+  "before-017.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.75,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.0,
+      "sink": 0.001,
+      "drain": 0.08,
+      "leak": 0.169,
+      "aircon": 0.75,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "before-018.jpg": {
+    "serviceType": "sink",
+    "confidence": 0.839,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.156,
+      "sink": 0.839,
+      "drain": 0.0,
+      "leak": 0.0,
+      "aircon": 0.005,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "before-019.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.813,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.053,
+      "sink": 0.007,
+      "drain": 0.008,
+      "leak": 0.109,
+      "aircon": 0.813,
+      "sewage": 0.0,
+      "stormwater": 0.009,
+      "manhole": 0.001
+    }
+  },
+  "complete-001.jpg": {
+    "serviceType": "sink",
+    "confidence": 0.893,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.076,
+      "sink": 0.893,
+      "drain": 0.0,
+      "leak": 0.024,
+      "aircon": 0.007,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-001.jpg": {
+    "serviceType": "toilet",
+    "confidence": 0.877,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.877,
+      "sink": 0.003,
+      "drain": 0.003,
+      "leak": 0.011,
+      "aircon": 0.104,
+      "sewage": 0.002,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-002.jpg": {
+    "serviceType": "toilet",
+    "confidence": 0.982,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.982,
+      "sink": 0.002,
+      "drain": 0.003,
+      "leak": 0.008,
+      "aircon": 0.004,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-003.jpg": {
+    "serviceType": "misc",
+    "confidence": 0.0,
+    "manual_review": true,
+    "error": "'cp949' codec can't encode character '\\u26a0' in position 12: illegal multibyte sequence"
+  },
+  "during-004.jpg": {
+    "serviceType": "toilet",
+    "confidence": 0.992,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.992,
+      "sink": 0.0,
+      "drain": 0.0,
+      "leak": 0.008,
+      "aircon": 0.0,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-005.jpg": {
+    "serviceType": "toilet",
+    "confidence": 1.0,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 1.0,
+      "sink": 0.0,
+      "drain": 0.0,
+      "leak": 0.0,
+      "aircon": 0.0,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-006.jpg": {
+    "serviceType": "misc",
+    "confidence": 0.0,
+    "manual_review": true,
+    "error": "'cp949' codec can't encode character '\\u26a0' in position 12: illegal multibyte sequence"
+  },
+  "during-007.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.988,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.006,
+      "sink": 0.001,
+      "drain": 0.0,
+      "leak": 0.005,
+      "aircon": 0.988,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-008.jpg": {
+    "serviceType": "toilet",
+    "confidence": 0.911,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.911,
+      "sink": 0.058,
+      "drain": 0.0,
+      "leak": 0.011,
+      "aircon": 0.019,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-009.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.987,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.009,
+      "sink": 0.001,
+      "drain": 0.0,
+      "leak": 0.004,
+      "aircon": 0.987,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-010.jpg": {
+    "serviceType": "toilet",
+    "confidence": 0.887,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.887,
+      "sink": 0.004,
+      "drain": 0.015,
+      "leak": 0.0,
+      "aircon": 0.093,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-011.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.884,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.029,
+      "sink": 0.035,
+      "drain": 0.0,
+      "leak": 0.051,
+      "aircon": 0.884,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-012.jpg": {
+    "serviceType": "leak",
+    "confidence": 0.769,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.0,
+      "sink": 0.001,
+      "drain": 0.0,
+      "leak": 0.769,
+      "aircon": 0.229,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-013.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.873,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.11,
+      "sink": 0.01,
+      "drain": 0.004,
+      "leak": 0.003,
+      "aircon": 0.873,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-014.jpg": {
+    "serviceType": "toilet",
+    "confidence": 0.582,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.582,
+      "sink": 0.02,
+      "drain": 0.037,
+      "leak": 0.117,
+      "aircon": 0.243,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-015.jpg": {
+    "serviceType": "misc",
+    "confidence": 0.0,
+    "manual_review": true,
+    "error": "'cp949' codec can't encode character '\\u26a0' in position 12: illegal multibyte sequence"
+  },
+  "during-016.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.736,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.119,
+      "sink": 0.139,
+      "drain": 0.0,
+      "leak": 0.005,
+      "aircon": 0.736,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-017.jpg": {
+    "serviceType": "misc",
+    "confidence": 0.0,
+    "manual_review": true,
+    "error": "'cp949' codec can't encode character '\\u26a0' in position 12: illegal multibyte sequence"
+  },
+  "during-018.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.855,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.003,
+      "sink": 0.117,
+      "drain": 0.0,
+      "leak": 0.024,
+      "aircon": 0.855,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-019.jpg": {
+    "serviceType": "toilet",
+    "confidence": 0.601,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.601,
+      "sink": 0.03,
+      "drain": 0.0,
+      "leak": 0.063,
+      "aircon": 0.28,
+      "sewage": 0.026,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-020.jpg": {
+    "serviceType": "sink",
+    "confidence": 0.853,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.056,
+      "sink": 0.853,
+      "drain": 0.0,
+      "leak": 0.053,
+      "aircon": 0.038,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-021.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.753,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.003,
+      "sink": 0.055,
+      "drain": 0.0,
+      "leak": 0.189,
+      "aircon": 0.753,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-022.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.845,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.004,
+      "sink": 0.143,
+      "drain": 0.0,
+      "leak": 0.007,
+      "aircon": 0.845,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-023.jpg": {
+    "serviceType": "leak",
+    "confidence": 0.848,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.005,
+      "sink": 0.002,
+      "drain": 0.0,
+      "leak": 0.848,
+      "aircon": 0.145,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-024.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.524,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.084,
+      "sink": 0.319,
+      "drain": 0.061,
+      "leak": 0.013,
+      "aircon": 0.524,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-025.jpg": {
+    "serviceType": "sink",
+    "confidence": 0.525,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.001,
+      "sink": 0.525,
+      "drain": 0.002,
+      "leak": 0.093,
+      "aircon": 0.378,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-026.jpg": {
+    "serviceType": "sink",
+    "confidence": 0.675,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.046,
+      "sink": 0.675,
+      "drain": 0.001,
+      "leak": 0.213,
+      "aircon": 0.065,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-027.jpg": {
+    "serviceType": "sink",
+    "confidence": 0.903,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.081,
+      "sink": 0.903,
+      "drain": 0.0,
+      "leak": 0.013,
+      "aircon": 0.003,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-028.jpg": {
+    "serviceType": "sink",
+    "confidence": 0.93,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.007,
+      "sink": 0.93,
+      "drain": 0.0,
+      "leak": 0.001,
+      "aircon": 0.062,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-029.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.616,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.012,
+      "sink": 0.357,
+      "drain": 0.0,
+      "leak": 0.015,
+      "aircon": 0.616,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-030.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.876,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.003,
+      "sink": 0.041,
+      "drain": 0.006,
+      "leak": 0.074,
+      "aircon": 0.876,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-031.jpg": {
+    "serviceType": "leak",
+    "confidence": 0.667,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.0,
+      "sink": 0.002,
+      "drain": 0.0,
+      "leak": 0.667,
+      "aircon": 0.331,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-032.jpg": {
+    "serviceType": "leak",
+    "confidence": 0.829,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.001,
+      "sink": 0.005,
+      "drain": 0.0,
+      "leak": 0.829,
+      "aircon": 0.165,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-033.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.621,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.018,
+      "sink": 0.168,
+      "drain": 0.0,
+      "leak": 0.193,
+      "aircon": 0.621,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-034.jpg": {
+    "serviceType": "leak",
+    "confidence": 0.849,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.001,
+      "sink": 0.009,
+      "drain": 0.002,
+      "leak": 0.849,
+      "aircon": 0.139,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-035.jpg": {
+    "serviceType": "misc",
+    "confidence": 0.0,
+    "manual_review": true,
+    "error": "'cp949' codec can't encode character '\\u26a0' in position 12: illegal multibyte sequence"
+  },
+  "during-036.jpg": {
+    "serviceType": "toilet",
+    "confidence": 0.977,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.977,
+      "sink": 0.002,
+      "drain": 0.004,
+      "leak": 0.002,
+      "aircon": 0.015,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-037.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.809,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.01,
+      "sink": 0.168,
+      "drain": 0.0,
+      "leak": 0.013,
+      "aircon": 0.809,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-038.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.959,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.001,
+      "sink": 0.019,
+      "drain": 0.0,
+      "leak": 0.02,
+      "aircon": 0.959,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-039.jpg": {
+    "serviceType": "misc",
+    "confidence": 0.0,
+    "manual_review": true,
+    "error": "'cp949' codec can't encode character '\\u26a0' in position 12: illegal multibyte sequence"
+  },
+  "during-040.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.699,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.052,
+      "sink": 0.177,
+      "drain": 0.002,
+      "leak": 0.07,
+      "aircon": 0.699,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-041.jpg": {
+    "serviceType": "sink",
+    "confidence": 0.513,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.005,
+      "sink": 0.513,
+      "drain": 0.049,
+      "leak": 0.001,
+      "aircon": 0.431,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-042.jpg": {
+    "serviceType": "sink",
+    "confidence": 0.716,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.145,
+      "sink": 0.716,
+      "drain": 0.002,
+      "leak": 0.007,
+      "aircon": 0.131,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-043.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.503,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.059,
+      "sink": 0.039,
+      "drain": 0.002,
+      "leak": 0.396,
+      "aircon": 0.503,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-044.jpg": {
+    "serviceType": "toilet",
+    "confidence": 0.684,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.684,
+      "sink": 0.0,
+      "drain": 0.0,
+      "leak": 0.014,
+      "aircon": 0.302,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-045.jpg": {
+    "serviceType": "toilet",
+    "confidence": 0.63,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.63,
+      "sink": 0.001,
+      "drain": 0.0,
+      "leak": 0.146,
+      "aircon": 0.222,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-046.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.695,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.013,
+      "sink": 0.031,
+      "drain": 0.009,
+      "leak": 0.251,
+      "aircon": 0.695,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-047.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.797,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.018,
+      "sink": 0.054,
+      "drain": 0.013,
+      "leak": 0.118,
+      "aircon": 0.797,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-048.jpg": {
+    "serviceType": "misc",
+    "confidence": 0.0,
+    "manual_review": true,
+    "error": "'cp949' codec can't encode character '\\u26a0' in position 12: illegal multibyte sequence"
+  },
+  "during-049.jpg": {
+    "serviceType": "stormwater",
+    "confidence": 0.68,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.006,
+      "sink": 0.024,
+      "drain": 0.018,
+      "leak": 0.018,
+      "aircon": 0.072,
+      "sewage": 0.181,
+      "stormwater": 0.68,
+      "manhole": 0.001
+    }
+  },
+  "during-050.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.755,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.001,
+      "sink": 0.01,
+      "drain": 0.098,
+      "leak": 0.115,
+      "aircon": 0.755,
+      "sewage": 0.004,
+      "stormwater": 0.01,
+      "manhole": 0.007
+    }
+  },
+  "during-051.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.815,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.001,
+      "sink": 0.006,
+      "drain": 0.076,
+      "leak": 0.012,
+      "aircon": 0.815,
+      "sewage": 0.02,
+      "stormwater": 0.001,
+      "manhole": 0.07
+    }
+  },
+  "during-052.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.93,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.013,
+      "sink": 0.013,
+      "drain": 0.0,
+      "leak": 0.044,
+      "aircon": 0.93,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-053.jpg": {
+    "serviceType": "drain",
+    "confidence": 0.627,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.081,
+      "sink": 0.013,
+      "drain": 0.627,
+      "leak": 0.013,
+      "aircon": 0.265,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-054.jpg": {
+    "serviceType": "toilet",
+    "confidence": 0.827,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.827,
+      "sink": 0.026,
+      "drain": 0.115,
+      "leak": 0.004,
+      "aircon": 0.028,
+      "sewage": 0.001,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-055.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.86,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.064,
+      "sink": 0.017,
+      "drain": 0.014,
+      "leak": 0.045,
+      "aircon": 0.86,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-056.jpg": {
+    "serviceType": "drain",
+    "confidence": 0.583,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.033,
+      "sink": 0.142,
+      "drain": 0.583,
+      "leak": 0.003,
+      "aircon": 0.218,
+      "sewage": 0.001,
+      "stormwater": 0.0,
+      "manhole": 0.02
+    }
+  },
+  "during-057.jpg": {
+    "serviceType": "toilet",
+    "confidence": 0.999,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.999,
+      "sink": 0.0,
+      "drain": 0.0,
+      "leak": 0.0,
+      "aircon": 0.001,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-058.jpg": {
+    "serviceType": "toilet",
+    "confidence": 0.82,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.82,
+      "sink": 0.002,
+      "drain": 0.02,
+      "leak": 0.014,
+      "aircon": 0.144,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-059.jpg": {
+    "serviceType": "toilet",
+    "confidence": 0.937,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.937,
+      "sink": 0.001,
+      "drain": 0.0,
+      "leak": 0.001,
+      "aircon": 0.062,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-060.jpg": {
+    "serviceType": "toilet",
+    "confidence": 0.869,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.869,
+      "sink": 0.015,
+      "drain": 0.06,
+      "leak": 0.024,
+      "aircon": 0.033,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-061.jpg": {
+    "serviceType": "toilet",
+    "confidence": 0.961,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.961,
+      "sink": 0.0,
+      "drain": 0.0,
+      "leak": 0.038,
+      "aircon": 0.0,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-062.jpg": {
+    "serviceType": "toilet",
+    "confidence": 0.983,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.983,
+      "sink": 0.0,
+      "drain": 0.0,
+      "leak": 0.015,
+      "aircon": 0.002,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-063.jpg": {
+    "serviceType": "misc",
+    "confidence": 0.0,
+    "manual_review": true,
+    "error": "'cp949' codec can't encode character '\\u26a0' in position 12: illegal multibyte sequence"
+  },
+  "during-064.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.937,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.001,
+      "sink": 0.029,
+      "drain": 0.001,
+      "leak": 0.033,
+      "aircon": 0.937,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-065.jpg": {
+    "serviceType": "misc",
+    "confidence": 0.0,
+    "manual_review": true,
+    "error": "'cp949' codec can't encode character '\\u26a0' in position 12: illegal multibyte sequence"
+  },
+  "during-066.jpg": {
+    "serviceType": "toilet",
+    "confidence": 0.555,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.555,
+      "sink": 0.004,
+      "drain": 0.001,
+      "leak": 0.004,
+      "aircon": 0.435,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-067.jpg": {
+    "serviceType": "leak",
+    "confidence": 0.978,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.0,
+      "sink": 0.003,
+      "drain": 0.0,
+      "leak": 0.978,
+      "aircon": 0.019,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-068.jpg": {
+    "serviceType": "misc",
+    "confidence": 0.0,
+    "manual_review": true,
+    "error": "'cp949' codec can't encode character '\\u26a0' in position 12: illegal multibyte sequence"
+  },
+  "during-069.jpg": {
+    "serviceType": "misc",
+    "confidence": 0.0,
+    "manual_review": true,
+    "error": "'cp949' codec can't encode character '\\u26a0' in position 12: illegal multibyte sequence"
+  },
+  "during-070.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.896,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.0,
+      "sink": 0.015,
+      "drain": 0.007,
+      "leak": 0.082,
+      "aircon": 0.896,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-071.jpg": {
+    "serviceType": "leak",
+    "confidence": 0.915,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.01,
+      "sink": 0.015,
+      "drain": 0.001,
+      "leak": 0.915,
+      "aircon": 0.058,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-072.jpg": {
+    "serviceType": "toilet",
+    "confidence": 1.0,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 1.0,
+      "sink": 0.0,
+      "drain": 0.0,
+      "leak": 0.0,
+      "aircon": 0.0,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-073.jpg": {
+    "serviceType": "sink",
+    "confidence": 0.649,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.037,
+      "sink": 0.649,
+      "drain": 0.0,
+      "leak": 0.25,
+      "aircon": 0.063,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-074.jpg": {
+    "serviceType": "misc",
+    "confidence": 0.0,
+    "manual_review": true,
+    "error": "'cp949' codec can't encode character '\\u26a0' in position 12: illegal multibyte sequence"
+  },
+  "during-075.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.784,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.001,
+      "sink": 0.034,
+      "drain": 0.003,
+      "leak": 0.177,
+      "aircon": 0.784,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-076.jpg": {
+    "serviceType": "leak",
+    "confidence": 0.982,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.0,
+      "sink": 0.004,
+      "drain": 0.0,
+      "leak": 0.982,
+      "aircon": 0.011,
+      "sewage": 0.003,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-077.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.601,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.0,
+      "sink": 0.389,
+      "drain": 0.001,
+      "leak": 0.006,
+      "aircon": 0.601,
+      "sewage": 0.003,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-078.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.961,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.0,
+      "sink": 0.017,
+      "drain": 0.004,
+      "leak": 0.018,
+      "aircon": 0.961,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-079.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.652,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.036,
+      "sink": 0.008,
+      "drain": 0.027,
+      "leak": 0.278,
+      "aircon": 0.652,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-080.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.838,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.0,
+      "sink": 0.003,
+      "drain": 0.151,
+      "leak": 0.007,
+      "aircon": 0.838,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-081.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.7,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.007,
+      "sink": 0.194,
+      "drain": 0.004,
+      "leak": 0.078,
+      "aircon": 0.7,
+      "sewage": 0.018,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-082.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.953,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.0,
+      "sink": 0.016,
+      "drain": 0.007,
+      "leak": 0.024,
+      "aircon": 0.953,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-083.jpg": {
+    "serviceType": "drain",
+    "confidence": 0.527,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.077,
+      "sink": 0.025,
+      "drain": 0.527,
+      "leak": 0.29,
+      "aircon": 0.079,
+      "sewage": 0.001,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-084.jpg": {
+    "serviceType": "misc",
+    "confidence": 0.0,
+    "manual_review": true,
+    "error": "'cp949' codec can't encode character '\\u26a0' in position 12: illegal multibyte sequence"
+  },
+  "during-085.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.657,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.223,
+      "sink": 0.075,
+      "drain": 0.015,
+      "leak": 0.01,
+      "aircon": 0.657,
+      "sewage": 0.019,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-086.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.563,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.014,
+      "sink": 0.005,
+      "drain": 0.002,
+      "leak": 0.416,
+      "aircon": 0.563,
+      "sewage": 0.001,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-087.jpg": {
+    "serviceType": "sink",
+    "confidence": 0.527,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.126,
+      "sink": 0.527,
+      "drain": 0.013,
+      "leak": 0.072,
+      "aircon": 0.261,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-088.jpg": {
+    "serviceType": "sink",
+    "confidence": 0.737,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.036,
+      "sink": 0.737,
+      "drain": 0.001,
+      "leak": 0.019,
+      "aircon": 0.206,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-089.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.856,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.0,
+      "sink": 0.04,
+      "drain": 0.028,
+      "leak": 0.074,
+      "aircon": 0.856,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-090.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.732,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.002,
+      "sink": 0.056,
+      "drain": 0.032,
+      "leak": 0.178,
+      "aircon": 0.732,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-091.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.569,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.282,
+      "sink": 0.125,
+      "drain": 0.014,
+      "leak": 0.009,
+      "aircon": 0.569,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-092.jpg": {
+    "serviceType": "misc",
+    "confidence": 0.0,
+    "manual_review": true,
+    "error": "'cp949' codec can't encode character '\\u26a0' in position 12: illegal multibyte sequence"
+  },
+  "during-093.jpg": {
+    "serviceType": "toilet",
+    "confidence": 0.993,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.993,
+      "sink": 0.0,
+      "drain": 0.0,
+      "leak": 0.0,
+      "aircon": 0.007,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-094.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.727,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.001,
+      "sink": 0.015,
+      "drain": 0.001,
+      "leak": 0.255,
+      "aircon": 0.727,
+      "sewage": 0.001,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-095.jpg": {
+    "serviceType": "drain",
+    "confidence": 0.639,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.35,
+      "sink": 0.008,
+      "drain": 0.639,
+      "leak": 0.001,
+      "aircon": 0.002,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-096.jpg": {
+    "serviceType": "toilet",
+    "confidence": 0.78,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.78,
+      "sink": 0.022,
+      "drain": 0.032,
+      "leak": 0.001,
+      "aircon": 0.164,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-097.jpg": {
+    "serviceType": "toilet",
+    "confidence": 0.989,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.989,
+      "sink": 0.008,
+      "drain": 0.0,
+      "leak": 0.0,
+      "aircon": 0.003,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-098.jpg": {
+    "serviceType": "aircon",
+    "confidence": 0.782,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.023,
+      "sink": 0.038,
+      "drain": 0.001,
+      "leak": 0.151,
+      "aircon": 0.782,
+      "sewage": 0.004,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-099.jpg": {
+    "serviceType": "toilet",
+    "confidence": 0.551,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.551,
+      "sink": 0.031,
+      "drain": 0.29,
+      "leak": 0.007,
+      "aircon": 0.121,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-100.jpg": {
+    "serviceType": "toilet",
+    "confidence": 0.501,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.501,
+      "sink": 0.064,
+      "drain": 0.364,
+      "leak": 0.03,
+      "aircon": 0.041,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-101.jpg": {
+    "serviceType": "toilet",
+    "confidence": 0.999,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.999,
+      "sink": 0.0,
+      "drain": 0.0,
+      "leak": 0.0,
+      "aircon": 0.0,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-102.jpg": {
+    "serviceType": "toilet",
+    "confidence": 0.506,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.506,
+      "sink": 0.269,
+      "drain": 0.018,
+      "leak": 0.007,
+      "aircon": 0.167,
+      "sewage": 0.033,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-103.jpg": {
+    "serviceType": "toilet",
+    "confidence": 0.962,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.962,
+      "sink": 0.001,
+      "drain": 0.003,
+      "leak": 0.029,
+      "aircon": 0.005,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-104.jpg": {
+    "serviceType": "toilet",
+    "confidence": 0.973,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.973,
+      "sink": 0.0,
+      "drain": 0.0,
+      "leak": 0.0,
+      "aircon": 0.026,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-105.jpg": {
+    "serviceType": "toilet",
+    "confidence": 0.998,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.998,
+      "sink": 0.0,
+      "drain": 0.0,
+      "leak": 0.001,
+      "aircon": 0.001,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-106.jpg": {
+    "serviceType": "toilet",
+    "confidence": 0.902,
+    "manual_review": false,
+    "all_probs": {
+      "toilet": 0.902,
+      "sink": 0.001,
+      "drain": 0.015,
+      "leak": 0.078,
+      "aircon": 0.004,
+      "sewage": 0.0,
+      "stormwater": 0.0,
+      "manhole": 0.0
+    }
+  },
+  "during-107.jpg": {
+    "serviceType": "misc",
+    "confidence": 0.0,
+    "manual_review": true,
+    "error": "'cp949' codec can't encode character '\\u26a0' in position 12: illegal multibyte sequence"
+  }
+}
