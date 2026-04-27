@@ -1,9 +1,10 @@
 {
   "batchesDone": [
     1,
-    2
+    2,
+    3
   ],
-  "totalPinged": 3000,
-  "lastBatchAt": "2026-04-27T15:58:07.429Z",
+  "totalPinged": 4500,
+  "lastBatchAt": "2026-04-27T18:09:02.162Z",
   "_note": "Updated automatically by .github/workflows/indexnow-daily.yml. Day-1 batch 1 pinged from local machine."
 }
