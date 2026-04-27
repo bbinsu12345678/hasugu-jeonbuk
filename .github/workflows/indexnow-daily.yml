@@ -29,17 +29,6 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install dependencies (none needed — uses native fetch)
-        run: echo "no deps"
-
-      - name: Build static export (sitemap source of truth)
-        env:
-          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
-          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
-        run: |
-          npm ci
-          npm run build
-
       - name: Determine batch number
         id: batch
         run: |
@@ -58,7 +47,7 @@ jobs:
           if [ -f .github/.indexnow-progress.json ]; then
             cp .github/.indexnow-progress.json ~/.gstack/projects/하수구막힘/indexnow-progress.json
           fi
-          node scripts/seo/indexnow-distributed.mjs --batch=${{ steps.batch.outputs.n }}
+          node scripts/seo/indexnow-distributed.mjs --from-live --batch=${{ steps.batch.outputs.n }}
           cp ~/.gstack/projects/하수구막힘/indexnow-progress.json .github/.indexnow-progress.json
 
       - name: Commit progress
