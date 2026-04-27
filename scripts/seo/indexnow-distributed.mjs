@@ -41,6 +41,7 @@ const args = Object.fromEntries(
 );
 
 const dryRun = !!args['dry-run'];
+const fromLive = !!args['from-live'];
 const batchNum = parseInt(args.batch ?? '1', 10);
 
 if (!Number.isFinite(batchNum) || batchNum < 1) {
@@ -48,16 +49,28 @@ if (!Number.isFinite(batchNum) || batchNum < 1) {
   process.exit(1);
 }
 
-// out/sitemap-1.xml + sitemap-2.xml 에서 URL 전수 추출 (라이브 진실의 단일 소스)
-function extractUrls() {
+// sitemap-1.xml + sitemap-2.xml 에서 URL 전수 추출.
+// 기본: 로컬 out/ (build 결과). --from-live: 라이브 도메인 fetch (CI/CD 친화).
+async function extractUrls() {
   const urls = [];
-  for (const f of ['sitemap-1.xml', 'sitemap-2.xml']) {
-    const p = resolve(REPO_ROOT, 'out', f);
-    if (!existsSync(p)) {
-      console.error(`ERROR: ${p} 없음. 먼저 npm run build 필요.`);
-      process.exit(1);
+  const sitemaps = ['sitemap-1.xml', 'sitemap-2.xml'];
+  for (const f of sitemaps) {
+    let xml;
+    if (fromLive) {
+      const r = await fetch(`https://${HOST}/${f}`);
+      if (!r.ok) {
+        console.error(`ERROR: live ${f} fetch ${r.status}`);
+        process.exit(1);
+      }
+      xml = await r.text();
+    } else {
+      const p = resolve(REPO_ROOT, 'out', f);
+      if (!existsSync(p)) {
+        console.error(`ERROR: ${p} 없음. --from-live 옵션 또는 npm run build 필요.`);
+        process.exit(1);
+      }
+      xml = readFileSync(p, 'utf8');
     }
-    const xml = readFileSync(p, 'utf8');
     const m = xml.match(/<loc>([^<]+)<\/loc>/g) || [];
     for (const tag of m) {
       const u = tag.replace(/<\/?loc>/g, '').trim();
@@ -124,7 +137,7 @@ async function pingBatch(urlList) {
 }
 
 async function main() {
-  const all = prioritize(extractUrls());
+  const all = prioritize(await extractUrls());
   console.log(`Total URLs in sitemap: ${all.length}`);
 
   const start = (batchNum - 1) * BATCH_SIZE;
