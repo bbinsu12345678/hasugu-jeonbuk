@@ -1,0 +1,74 @@
+name: IndexNow Daily Distributed Ping
+
+# 매일 한국시간 02:00 (UTC 17:00) 자동 실행 — 19,420 URL 중 1,500개씩 분산 핑
+# 13~14일에 걸쳐 모든 sitemap URL 을 Bing/Yandex/Seznam 에 통보.
+#
+# advisor 권고: 일괄 19k 핑은 spammy. 분산이 안전.
+
+on:
+  schedule:
+    - cron: '0 17 * * *'  # UTC 17:00 = KST 02:00
+  workflow_dispatch:
+    inputs:
+      batch:
+        description: 'Manual batch number (override auto-increment)'
+        required: false
+        type: string
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # progress.json commit
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies (none needed — uses native fetch)
+        run: echo "no deps"
+
+      - name: Build static export (sitemap source of truth)
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+        run: |
+          npm ci
+          npm run build
+
+      - name: Determine batch number
+        id: batch
+        run: |
+          if [ -n "${{ github.event.inputs.batch }}" ]; then
+            echo "n=${{ github.event.inputs.batch }}" >> $GITHUB_OUTPUT
+          elif [ -f .github/.indexnow-progress.json ]; then
+            LAST=$(node -e "const j=require('./.github/.indexnow-progress.json');console.log(Math.max(...(j.batchesDone||[0])))")
+            echo "n=$((LAST + 1))" >> $GITHUB_OUTPUT
+          else
+            echo "n=2" >> $GITHUB_OUTPUT  # batch 1 already done locally on day-1
+          fi
+
+      - name: Ping IndexNow
+        run: |
+          mkdir -p ~/.gstack/projects/하수구막힘
+          if [ -f .github/.indexnow-progress.json ]; then
+            cp .github/.indexnow-progress.json ~/.gstack/projects/하수구막힘/indexnow-progress.json
+          fi
+          node scripts/seo/indexnow-distributed.mjs --batch=${{ steps.batch.outputs.n }}
+          cp ~/.gstack/projects/하수구막힘/indexnow-progress.json .github/.indexnow-progress.json
+
+      - name: Commit progress
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .github/.indexnow-progress.json
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "chore: indexnow batch ${{ steps.batch.outputs.n }} progress"
+            git push
+          fi
