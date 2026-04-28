@@ -47,10 +47,13 @@ async function measure(url, label, formFactor) {
 }
 
 async function main() {
-  await measure('http://localhost:4000', 'Home-Desktop', 'desktop');
-  await measure('http://localhost:4000', 'Home-Mobile', 'mobile');
-  await measure('http://localhost:4000/%EC%A0%84%EC%A3%BC%EC%8B%9C', 'Jeonju-Desktop', 'desktop');
-  await measure('http://localhost:4000/%EC%A0%84%EC%A3%BC%EC%8B%9C', 'Jeonju-Mobile', 'mobile');
+  const BASE = process.env.LH_BASE || 'http://localhost:4000';
+  await measure(`${BASE}/`, 'Home-Desktop', 'desktop');
+  await measure(`${BASE}/`, 'Home-Mobile', 'mobile');
+  await measure(`${BASE}/jeonbuk`, 'Jeonbuk-Desktop', 'desktop');
+  await measure(`${BASE}/jeonbuk`, 'Jeonbuk-Mobile', 'mobile');
+  await measure(`${BASE}/%EC%A0%84%EC%A3%BC%EC%8B%9C`, 'Jeonju-Desktop', 'desktop');
+  await measure(`${BASE}/%EC%A0%84%EC%A3%BC%EC%8B%9C`, 'Jeonju-Mobile', 'mobile');
 }
 
 main().catch(e => { console.error('ERROR:', e.message); process.exit(1); });
