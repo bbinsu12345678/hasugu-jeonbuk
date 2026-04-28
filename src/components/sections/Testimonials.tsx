@@ -18,10 +18,10 @@ export default function Testimonials() {
           {testimonials.map((review, i) => (
             <div key={i} className="card-shadow flex flex-col p-5">
               {/* 후기 내용 */}
-              <div className="mb-4 flex-1 rounded-lg bg-[--color-bg-light] p-4">
+              <div className="mb-4 flex-1 rounded-lg bg-[var(--color-bg-light)] p-4">
                 <Quote
                   size={20}
-                  className="mb-2 text-[--color-primary]"
+                  className="mb-2 text-[var(--color-primary)]"
                 />
                 <p className="text-sm leading-relaxed text-gray-700">
                   {review.content}

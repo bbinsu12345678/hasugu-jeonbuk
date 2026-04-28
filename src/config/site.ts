@@ -31,8 +31,8 @@ export const siteConfig: SiteConfig = {
 
   // --- 검색엔진 인증 ---
   verification: {
-    naver: '',
-    google: '',
+    naver: '8798183b1fa3719bcc6a55c30c4a0b539fd4300f',
+    google: '', // Google Search Console 도메인 방식 (DNS TXT) 인증 완료 — meta 태그 불필요
   },
 
   // --- IndexNow 키 (빙/얀덱스/세즈남 즉시 색인) ---

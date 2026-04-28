@@ -10,16 +10,17 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-[--color-border] bg-white/85 backdrop-blur-md">
+    <header className="sticky top-0 z-40 border-b border-[var(--color-border)] bg-white/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3.5 lg:px-6">
         {/* 로고 워드마크 */}
         <Link
           href="/"
-          className="inline-flex items-center gap-2 font-display text-lg font-extrabold tracking-tight text-[--color-primary-deep]"
+          prefetch={false}
+          className="inline-flex items-center gap-2 font-display text-lg font-extrabold tracking-tight text-[var(--color-primary-deep)]"
           aria-label={`${siteConfig.name} 홈`}
         >
           <span
-            className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-[--color-primary-deep] text-[--color-accent]"
+            className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-[var(--color-primary-deep)] text-[var(--color-accent)]"
             aria-hidden
           >
             <span className="font-extrabold">전</span>
@@ -36,7 +37,8 @@ export default function Header() {
             <Link
               key={item.label}
               href={item.href}
-              className="relative text-sm font-semibold text-[--color-text] transition hover:text-[--color-accent-deep]"
+              prefetch={false}
+              className="relative text-sm font-semibold text-[var(--color-text)] transition hover:text-[var(--color-accent-deep)]"
             >
               {item.label}
             </Link>
@@ -44,9 +46,8 @@ export default function Header() {
           <a
             href={phoneLink()}
             className="btn-cta text-sm"
-            aria-label={`전화 ${formatPhone()}`}
           >
-            <Phone size={15} />
+            <Phone size={15} aria-hidden="true" />
             <span className="tabular font-mono">{formatPhone()}</span>
           </a>
         </nav>
@@ -54,7 +55,7 @@ export default function Header() {
         {/* 모바일 햄버거 */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="rounded-md p-2 text-[--color-primary-deep] transition hover:bg-[--color-primary-soft] lg:hidden"
+          className="rounded-md p-2 text-[var(--color-primary-deep)] transition hover:bg-[var(--color-primary-soft)] lg:hidden"
           aria-label={isOpen ? '메뉴 닫기' : '메뉴 열기'}
           aria-expanded={isOpen}
         >
@@ -65,14 +66,15 @@ export default function Header() {
       {/* 모바일 드로어 */}
       {isOpen && (
         <nav
-          className="border-t border-[--color-border] bg-white px-4 pb-4 pt-2 lg:hidden"
+          className="border-t border-[var(--color-border)] bg-white px-4 pb-4 pt-2 lg:hidden"
           aria-label="모바일 메뉴"
         >
           {navItems.map((item) => (
             <Link
               key={item.label}
               href={item.href}
-              className="block border-b border-[--color-border] py-3 text-sm font-semibold text-[--color-text]"
+              prefetch={false}
+              className="block border-b border-[var(--color-border)] py-3 text-sm font-semibold text-[var(--color-text)]"
               onClick={() => setIsOpen(false)}
             >
               {item.label}

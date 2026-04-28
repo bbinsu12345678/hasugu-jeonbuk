@@ -14,7 +14,7 @@
 
   /* Brand - Orange 계열 */
   --color-accent: #f59e42;
-  --color-accent-deep: #d17a1f;
+  --color-accent-deep: #b54610;
   --color-accent-soft: #fff4e6;
 
   /* Surfaces */
@@ -471,13 +471,14 @@ h1, h2, h3, h4 {
   --hub-navy-deep: #0f2340;
   --hub-orange: #f2751a;
   --hub-orange-light: #ff8a3c;
+  --hub-orange-text: #b54610;
   --hub-yellow: #ffb84d;
   background: var(--hub-bg);
   color: var(--hub-text);
 }
 
 .hub-accent-gradient {
-  color: var(--hub-orange);
+  color: var(--hub-orange-text);
 }
 
 .hub-eyebrow {
@@ -488,14 +489,14 @@ h1, h2, h3, h4 {
   border-radius: 100px;
   background: #fff4e6;
   border: 1px solid #f5c895;
-  color: #b85f15;
+  color: #8a3a08;
   font-weight: 700;
   font-size: 12px;
   letter-spacing: 0.02em;
 }
 .hub-eyebrow::before {
   content: '●';
-  color: var(--hub-orange);
+  color: var(--hub-orange-text);
   font-size: 10px;
 }
 
@@ -507,15 +508,15 @@ h1, h2, h3, h4 {
   border-radius: 10px;
   font-weight: 800;
   font-size: 15px;
-  background: var(--hub-orange);
+  background: var(--hub-orange-text);
   color: #fff;
-  box-shadow: 0 4px 14px rgba(242,117,26,0.35);
+  box-shadow: 0 4px 14px rgba(181,70,16,0.35);
   transition: transform 0.18s, box-shadow 0.18s, background 0.18s;
 }
 .hub-btn-primary:hover {
   transform: translateY(-1px);
-  background: #e56a14;
-  box-shadow: 0 8px 24px rgba(242,117,26,0.45);
+  background: #8a3a08;
+  box-shadow: 0 8px 24px rgba(181,70,16,0.45);
 }
 .hub-btn-lg {
   font-size: 18px !important;

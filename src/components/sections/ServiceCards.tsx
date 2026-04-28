@@ -6,7 +6,7 @@ export default function ServiceCards() {
   return (
     <section
       id="services"
-      className="relative bg-[--color-bg] py-20 md:py-28"
+      className="relative bg-[var(--color-bg)] py-20 md:py-28"
     >
       {/* 섹션 배경 악센트 */}
       <div
@@ -22,12 +22,12 @@ export default function ServiceCards() {
         {/* 섹션 헤더 */}
         <div className="mb-14 text-center">
           <p className="section-label mb-4">막힘 증상</p>
-          <h2 className="text-3xl font-extrabold tracking-tight text-[--color-primary-deep] md:text-4xl">
+          <h2 className="text-3xl font-extrabold tracking-tight text-[var(--color-primary-deep)] md:text-4xl">
             변기·싱크대·하수구 막힘
             <br className="md:hidden" />
-            <span className="text-[--color-accent-deep]"> 증상과 해결</span>
+            <span className="text-[var(--color-accent-deep)]"> 증상과 해결</span>
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base text-[--color-text-muted]">
+          <p className="mx-auto mt-4 max-w-2xl text-base text-[var(--color-text-muted)]">
             어떤 증상이든 현장 진단 후 투명 견적. 전북 14 시/군 전 지역
             24시 긴급 출동합니다.
           </p>
@@ -41,7 +41,7 @@ export default function ServiceCards() {
               className="card-shadow group flex flex-col overflow-hidden"
             >
               {/* 서비스 이미지 + 상단 뱃지 */}
-              <div className="relative overflow-hidden bg-[--color-primary-soft]">
+              <div className="relative overflow-hidden bg-[var(--color-primary-soft)]">
                 <img
                   src={service.image}
                   alt={service.title}
@@ -51,7 +51,7 @@ export default function ServiceCards() {
                   height={800}
                 />
                 {/* 서비스 슬러그 뱃지 */}
-                <span className="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-bold uppercase tracking-wider text-[--color-primary-deep] backdrop-blur">
+                <span className="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-bold uppercase tracking-wider text-[var(--color-primary-deep)] backdrop-blur">
                   {service.title}
                 </span>
               </div>
@@ -59,17 +59,17 @@ export default function ServiceCards() {
               {/* 카드 본문 */}
               <div className="flex flex-1 flex-col gap-5 p-6">
                 <header>
-                  <h3 className="mb-2 text-xl font-bold text-[--color-primary-deep]">
+                  <h3 className="mb-2 text-xl font-bold text-[var(--color-primary-deep)]">
                     {service.title}
                   </h3>
-                  <p className="text-sm leading-relaxed text-[--color-text-muted]">
+                  <p className="text-sm leading-relaxed text-[var(--color-text-muted)]">
                     {service.description}
                   </p>
                 </header>
 
                 {/* 증상 테이블 */}
-                <div className="rounded-md bg-[--color-bg-light] p-3">
-                  <p className="mb-2 text-xs font-bold uppercase tracking-wider text-[--color-primary]">
+                <div className="rounded-md bg-[var(--color-bg-light)] p-3">
+                  <p className="mb-2 text-xs font-bold uppercase tracking-wider text-[var(--color-primary)]">
                     주요 증상
                   </p>
                   <table className="symptom-table">

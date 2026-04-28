@@ -144,7 +144,7 @@ export default async function CityHubPage({ params }: Props) {
                 <div className="text-2xl">{b.icon}</div>
                 <div>
                   <p className="text-sm font-bold text-slate-800">{b.label}</p>
-                  <p className="mt-0.5 text-xs text-slate-500">{b.desc}</p>
+                  <p className="mt-0.5 text-xs text-slate-600">{b.desc}</p>
                 </div>
               </div>
             ))}
@@ -181,7 +181,7 @@ export default async function CityHubPage({ params }: Props) {
               <h2 className="text-2xl font-black leading-tight tracking-tight text-slate-800 md:text-3xl">
                 {city} 전 지역 <span className="hub-accent-gradient">다양한 시설</span>에서 작업
               </h2>
-              <p className="mx-auto mt-3 max-w-2xl text-sm text-slate-500">
+              <p className="mx-auto mt-3 max-w-2xl text-sm text-slate-600">
                 관공서·대형마트·프랜차이즈·아파트·상가까지. 규모에 관계없이 동일한 기준으로 현장 상담 후 진행합니다.
               </p>
             </div>
@@ -196,7 +196,7 @@ export default async function CityHubPage({ params }: Props) {
                 {[...partners, ...partners].map((p, i) => (
                   <div key={`${p.name}-${i}`} className="flex h-20 w-40 flex-shrink-0 flex-col items-center justify-center gap-1.5 rounded-xl border border-slate-200 bg-white px-3 shadow-sm transition hover:-translate-y-1 hover:border-slate-300 hover:shadow-md" title={p.name}>
                     {p.logoUrl ? (
-                      <img src={p.logoUrl} alt={`${p.name} 로고`} className="h-8 w-auto max-w-[90px] object-contain" loading="lazy" />
+                      <img src={p.logoUrl} alt={`${p.name} 로고`} width="90" height="32" className="h-8 w-auto max-w-[90px] object-contain" loading="lazy" />
                     ) : (
                       <span className="flex h-8 min-w-[50px] items-center justify-center rounded-md px-2.5 text-xs font-bold text-white" style={{ backgroundColor: p.color }}>{p.symbol}</span>
                     )}
@@ -205,7 +205,7 @@ export default async function CityHubPage({ params }: Props) {
                 ))}
               </div>
             </div>
-            <p className="mt-4 text-center text-[10px] text-slate-400">* 시공·출장 경험이 있는 시설 예시이며, 공식 파트너쉽·계약 관계를 의미하지 않습니다.</p>
+            <p className="mt-4 text-center text-[10px] text-slate-600">* 시공·출장 경험이 있는 시설 예시이며, 공식 파트너쉽·계약 관계를 의미하지 않습니다.</p>
           </div>
         </section>
 
@@ -217,14 +217,14 @@ export default async function CityHubPage({ params }: Props) {
               <h2 className="text-3xl font-black leading-tight tracking-tight text-slate-800 md:text-4xl">
                 {city}에서 가능한 <span className="hub-accent-gradient">8개 서비스</span>
               </h2>
-              <p className="mt-3 text-base text-slate-500">현장 진단 후 투명 견적. 원인부터 재발 방지까지 통합 해결.</p>
+              <p className="mt-3 text-base text-slate-600">현장 진단 후 투명 견적. 원인부터 재발 방지까지 통합 해결.</p>
             </div>
             <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-4">
               {SERVICES.map((s) => (
                 <div key={s.name} className="hub-svc">
                   <div className="hub-svc-icon">{s.icon}</div>
                   <h3 className="mt-4 text-base font-bold text-slate-800">{s.name}</h3>
-                  <p className="mt-2 text-xs leading-relaxed text-slate-500">{s.desc}</p>
+                  <p className="mt-2 text-xs leading-relaxed text-slate-600">{s.desc}</p>
                   <div className="mt-3 flex flex-wrap gap-1">
                     {s.tags.map((t) => (
                       <span key={t} className="rounded-full bg-slate-100 px-2 py-0.5 text-[10px] font-semibold text-slate-600">
@@ -246,13 +246,13 @@ export default async function CityHubPage({ params }: Props) {
               <h2 className="text-3xl font-black leading-tight tracking-tight text-slate-800 md:text-4xl">
                 {city} <span className="hub-accent-gradient">{region.districts.length}개 동·읍·면</span>
               </h2>
-              <p className="mt-3 text-base text-slate-500">{city} 전 지역 어디든 24시간 긴급 출동합니다</p>
+              <p className="mt-3 text-base text-slate-600">{city} 전 지역 어디든 24시간 긴급 출동합니다</p>
             </div>
             <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
               {region.districts.map((district) => (
-                <Link key={district} href={`/${city}/${district}변기막힘뚫는곳업체비용해결후기`} className="hub-city">
+                <Link key={district} href={`/${city}/${district}변기막힘뚫는곳업체비용해결후기`} prefetch={false} className="hub-city">
                   <div className="text-sm font-bold text-slate-800">{district}</div>
-                  <div className="mt-1 text-[11px] text-slate-500">24시 출동</div>
+                  <div className="mt-1 text-[11px] text-slate-600">24시 출동</div>
                 </Link>
               ))}
             </div>
@@ -268,13 +268,14 @@ export default async function CityHubPage({ params }: Props) {
                 <h2 className="text-3xl font-black leading-tight tracking-tight text-slate-800 md:text-4xl">
                   {city} <span className="hub-accent-gradient">현장 후기</span>
                 </h2>
-                <p className="mt-3 text-base text-slate-500">실 작업 진행 과정과 결과</p>
+                <p className="mt-3 text-base text-slate-600">실 작업 진행 과정과 결과</p>
               </div>
               <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
                 {cityPosts.map((post) => (
                   <Link
                     key={post.slug}
                     href={`/${post.city}/${post.slug}`}
+                    prefetch={false}
                     className="group overflow-hidden rounded-xl border border-slate-200 bg-white transition hover:-translate-y-1 hover:border-slate-300 hover:shadow-lg"
                   >
                     <div className="overflow-hidden bg-slate-100">
@@ -298,7 +299,7 @@ export default async function CityHubPage({ params }: Props) {
               <h2 className="text-3xl font-black leading-tight tracking-tight text-slate-800 md:text-4xl">
                 {city} 자주 <span className="hub-accent-gradient">묻는 질문</span>
               </h2>
-              <p className="mt-3 text-base text-slate-500">현장 출동 전 알려드리는 실제 답변</p>
+              <p className="mt-3 text-base text-slate-600">현장 출동 전 알려드리는 실제 답변</p>
             </div>
             <div className="mt-10 space-y-3">
               {cityFaq.map((item, idx) => (

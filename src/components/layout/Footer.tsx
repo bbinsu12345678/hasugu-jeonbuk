@@ -7,9 +7,9 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="relative bg-[--color-primary-deep] pb-24 pt-16 text-white/80 md:pb-14">
+    <footer className="relative bg-[var(--color-primary-deep)] pb-24 pt-16 text-white/80 md:pb-14">
       {/* 상단 accent bar */}
-      <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[--color-accent] via-[--color-accent-deep] to-[--color-accent]" />
+      <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[var(--color-accent)] via-[var(--color-accent-deep)] to-[var(--color-accent)]" />
 
       <div className="mx-auto max-w-6xl px-4 lg:px-6">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1.2fr]">
@@ -19,6 +19,8 @@ export default function Footer() {
               <img
                 src="/images/logo-white.png"
                 alt={siteConfig.name}
+                width="120"
+                height="32"
                 className="h-8 w-auto object-contain opacity-90 transition hover:opacity-100"
               />
             </div>
@@ -34,9 +36,8 @@ export default function Footer() {
               <a
                 href={phoneLink()}
                 className="btn-cta text-sm"
-                aria-label={`전화 ${formatPhone()}`}
               >
-                <Phone size={16} />
+                <Phone size={16} aria-hidden="true" />
                 <span className="tabular font-mono">{formatPhone()}</span>
               </a>
               <a
@@ -45,15 +46,14 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-md border border-white/25 bg-white/5 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-white/15"
               >
-                <MessageCircle size={15} />
+                <MessageCircle size={15} aria-hidden="true" />
                 카카오 상담
               </a>
               <a
                 href="#contact"
                 className="inline-flex items-center gap-2 rounded-md border border-white/25 bg-white/5 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-white/15"
-                aria-label="문의 폼으로 이동"
               >
-                <Mail size={15} />
+                <Mail size={15} aria-hidden="true" />
                 문의 하기
               </a>
             </div>
@@ -61,7 +61,7 @@ export default function Footer() {
 
           {/* 메뉴 */}
           <nav aria-label="푸터 메뉴">
-            <h3 className="mb-4 text-xs font-bold uppercase tracking-wider text-[--color-accent]">
+            <h3 className="mb-4 text-xs font-bold uppercase tracking-wider text-[var(--color-accent)]">
               메뉴
             </h3>
             <ul className="space-y-2.5">
@@ -69,6 +69,7 @@ export default function Footer() {
                 <li key={item.label}>
                   <Link
                     href={item.href}
+                    prefetch={false}
                     className="inline-block text-sm text-white/75 transition hover:text-white hover:translate-x-0.5"
                   >
                     {item.label}
@@ -80,7 +81,7 @@ export default function Footer() {
 
           {/* 사업자 정보 */}
           <div>
-            <h3 className="mb-4 text-xs font-bold uppercase tracking-wider text-[--color-accent]">
+            <h3 className="mb-4 text-xs font-bold uppercase tracking-wider text-[var(--color-accent)]">
               사업자 정보
             </h3>
             <dl className="space-y-2 text-sm">
@@ -123,7 +124,7 @@ export default function Footer() {
         >
           <h3
             id="partner-regions"
-            className="mb-3 text-xs font-bold uppercase tracking-wider text-[--color-accent]"
+            className="mb-3 text-xs font-bold uppercase tracking-wider text-[var(--color-accent)]"
           >
             전라북도 시·군 전용 사이트
           </h3>
@@ -150,7 +151,7 @@ export default function Footer() {
             <li className="text-white/50">임실군</li>
             <li className="text-white/50">순창군</li>
           </ul>
-          <p className="mt-4 text-xs text-white/40">
+          <p className="mt-4 text-xs text-white/70">
             시·군별 전용 사이트 준비 중 (서브 오픈 시 직접 이동 가능)
           </p>
         </section>
