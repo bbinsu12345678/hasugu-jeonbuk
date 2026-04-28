@@ -45,7 +45,7 @@ export default function ServiceArea() {
                 >
                   <Check
                     size={18}
-                    className="mt-0.5 flex-shrink-0 text-[--color-primary]"
+                    className="mt-0.5 flex-shrink-0 text-[var(--color-primary)]"
                   />
                   <span>{item}</span>
                 </li>
@@ -54,7 +54,7 @@ export default function ServiceArea() {
 
             <a
               href={phoneLink()}
-              className="inline-block rounded-lg bg-[--color-primary] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[--color-primary-dark]"
+              className="inline-block rounded-lg bg-[var(--color-primary)] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[var(--color-primary-dark)]"
             >
               {siteConfig.name} 문의
             </a>

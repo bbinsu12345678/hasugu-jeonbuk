@@ -99,6 +99,15 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <head>
+        {/* LCP image preload — browser fetches before render */}
+        <link
+          rel="preload"
+          as="image"
+          href="/images/hero/banner-1-600.webp"
+          imageSrcSet="/images/hero/banner-1-600.webp 600w, /images/hero/banner-1-1200.webp 1200w"
+          imageSizes="(max-width: 640px) 90vw, 600px"
+          fetchPriority="high"
+        />
         <link rel="preconnect" href="https://cdn.jsdelivr.net" crossOrigin="anonymous" />
         <link
           rel="preload"
@@ -126,7 +135,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="bg-[--color-bg] text-[--color-text] antialiased">
+      <body className="bg-[var(--color-bg)] text-[var(--color-text)] antialiased">
         <Header />
         <main>{children}</main>
         <Footer />

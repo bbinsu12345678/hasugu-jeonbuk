@@ -35,9 +35,9 @@ export default function Facilities() {
             return (
               <div
                 key={item.title}
-                className="card-shadow flex gap-4 border-t-4 border-[--color-primary] p-6"
+                className="card-shadow flex gap-4 border-t-4 border-[var(--color-primary)] p-6"
               >
-                <div className="flex-shrink-0 text-[--color-primary]">
+                <div className="flex-shrink-0 text-[var(--color-primary)]">
                   <Icon size={36} />
                 </div>
                 <div>

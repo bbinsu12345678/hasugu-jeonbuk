@@ -67,11 +67,11 @@ export default function SymptomChecker() {
 
   return (
     <form onSubmit={handleSubmit} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
-      <p className="text-sm font-bold text-[--color-accent]">1단계 · 증상을 선택해주세요</p>
-      <h3 className="mt-2 text-xl font-black text-slate-800 md:text-2xl">
+      <p className="text-sm font-bold text-[var(--color-accent-deep)]">1단계 · 증상을 선택해주세요</p>
+      <h2 className="mt-2 text-xl font-black text-slate-800 md:text-2xl">
         현장 출동 전 <span className="hub-accent-gradient">빠른 진단</span>
-      </h3>
-      <p className="mt-2 text-sm text-slate-500">
+      </h2>
+      <p className="mt-2 text-sm text-slate-600">
         증상을 체크하면 원인과 대응 방안을 먼저 안내드립니다.
       </p>
 
@@ -84,13 +84,13 @@ export default function SymptomChecker() {
               key={s}
               className={`flex cursor-pointer items-start gap-2 rounded-lg border p-3 text-sm transition ${
                 on
-                  ? 'border-[--color-accent] bg-[--color-accent]/5'
+                  ? 'border-[var(--color-accent)] bg-[var(--color-accent)]/5'
                   : 'border-slate-200 bg-white hover:border-slate-300'
               }`}
             >
               <input
                 type="checkbox"
-                className="mt-0.5 h-4 w-4 accent-[--color-accent]"
+                className="mt-0.5 h-4 w-4 accent-[var(--color-accent)]"
                 checked={on}
                 onChange={() => toggle(s)}
               />
@@ -113,9 +113,9 @@ export default function SymptomChecker() {
           placeholder="010-1234-5678"
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
-          className="w-full rounded-lg border border-slate-300 px-4 py-3 text-sm focus:border-[--color-primary] focus:outline-none focus:ring-1 focus:ring-[--color-primary]"
+          className="w-full rounded-lg border border-slate-300 px-4 py-3 text-sm focus:border-[var(--color-primary)] focus:outline-none focus:ring-1 focus:ring-[var(--color-primary)]"
         />
-        <p className="mt-2 text-[11px] text-slate-400">
+        <p className="mt-2 text-[11px] text-slate-600">
           * 연락처는 상담 목적으로만 사용되며 외부에 공유되지 않습니다.
         </p>
       </div>

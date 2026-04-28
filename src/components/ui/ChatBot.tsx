@@ -225,7 +225,6 @@ export default function ChatBot() {
                   <a
                     href={phoneLink()}
                     className="chatbot-cta-phone"
-                    aria-label={`전화 상담 ${formatPhone()}`}
                   >
                     📞 {formatPhone()} 전화
                   </a>
@@ -234,7 +233,6 @@ export default function ChatBot() {
                     className="chatbot-cta-kakao"
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="카카오 상담"
                   >
                     💬 카카오 상담
                   </a>

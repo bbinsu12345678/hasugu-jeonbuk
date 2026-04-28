@@ -416,7 +416,7 @@ export default function HomePage() {
 
             {/* CTA pill group */}
             <div className="hub-hero-cta-group">
-              <a href={phoneLink()} className="hub-hero-pill-phone" aria-label={`전화하기 ${formatPhone()}`}>
+              <a href={phoneLink()} className="hub-hero-pill-phone">
                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true" style={{flexShrink:0}}>
                   <path d="M4.5 3C4.5 3 6.5 2.5 7.5 5.5S7.5 9 6.5 9.5 6 11.5 7 13s4.5 4.5 6.5 4.5 2.5-1.2 3.2-2 .7-1.4-.8-3.4-2.4-2-2.4-2 .7-1.4 4-2.2" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
@@ -428,11 +428,10 @@ export default function HomePage() {
                 className="hub-hero-pill-ghost"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="카카오 상담"
               >
                 💬 카카오 상담
               </a>
-              <a href="#contact" className="hub-hero-pill-ghost" aria-label="문의 폼으로 이동">
+              <a href="#contact" className="hub-hero-pill-ghost">
                 ✉️ 문의 하기
               </a>
             </div>
@@ -464,10 +463,12 @@ export default function HomePage() {
           {/* Floating polaroid — desktop 우하단, mobile 하단 중앙 */}
           <div className="hub-hero-polaroid" aria-label="전북하수구 실 출동 현장">
             <img
-              src="/images/hero/banner-1.webp"
+              src="/images/hero/banner-1-600.webp"
+              srcSet="/images/hero/banner-1-600.webp 600w, /images/hero/banner-1-1200.webp 1200w, /images/hero/banner-1.webp 1920w"
+              sizes="(max-width: 640px) 90vw, 600px"
               alt="전북하수구 실 출동 현장"
               loading="eager"
-              fetchPriority="auto"
+              fetchPriority="high"
               width={600}
               height={420}
             />
@@ -490,7 +491,7 @@ export default function HomePage() {
                 <div className="text-2xl">{b.icon}</div>
                 <div>
                   <p className="text-sm font-bold text-slate-800">{b.label}</p>
-                  <p className="mt-0.5 text-xs text-slate-500">{b.desc}</p>
+                  <p className="mt-0.5 text-xs text-slate-600">{b.desc}</p>
                 </div>
               </div>
             ))}
@@ -527,7 +528,7 @@ export default function HomePage() {
               <h2 className="text-3xl font-black leading-tight tracking-tight text-slate-800 md:text-4xl">
                 8개 <span className="hub-accent-gradient">전문 서비스</span>
               </h2>
-              <p className="mt-3 text-base text-slate-500">현장 진단 후 투명 견적. 원인부터 재발 방지까지 통합 해결.</p>
+              <p className="mt-3 text-base text-slate-600">현장 진단 후 투명 견적. 원인부터 재발 방지까지 통합 해결.</p>
             </div>
             <div className="svc-bento mt-12">
               {SERVICES.map((s, idx) => (
@@ -561,22 +562,22 @@ export default function HomePage() {
               <h2 className="text-3xl font-black leading-tight tracking-tight text-slate-800 md:text-4xl">
                 일반 업체 vs <span className="hub-accent-gradient">전북하수구</span>
               </h2>
-              <p className="mt-3 text-base text-slate-500">6가지 기준으로 비교합니다</p>
+              <p className="mt-3 text-base text-slate-600">6가지 기준으로 비교합니다</p>
             </div>
             <div className="mt-10 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
               <table className="w-full text-sm">
                 <thead className="bg-slate-50">
                   <tr>
-                    <th className="px-4 py-3 text-left font-bold text-slate-500 md:px-6">항목</th>
-                    <th className="px-4 py-3 text-left font-semibold text-slate-400 md:px-6">일반 업체</th>
-                    <th className="px-4 py-3 text-left font-bold text-[--color-primary] md:px-6">전북하수구</th>
+                    <th className="px-4 py-3 text-left font-bold text-slate-600 md:px-6">항목</th>
+                    <th className="px-4 py-3 text-left font-semibold text-slate-600 md:px-6">일반 업체</th>
+                    <th className="px-4 py-3 text-left font-bold text-[var(--color-primary)] md:px-6">전북하수구</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-100">
                   {COMPARISON.map((row) => (
                     <tr key={row.label}>
                       <td className="px-4 py-4 font-bold text-slate-800 md:px-6">{row.label}</td>
-                      <td className="px-4 py-4 text-slate-500 md:px-6">{row.others}</td>
+                      <td className="px-4 py-4 text-slate-600 md:px-6">{row.others}</td>
                       <td className="px-4 py-4 font-semibold text-slate-800 md:px-6">✓ {row.ours}</td>
                     </tr>
                   ))}
@@ -594,7 +595,7 @@ export default function HomePage() {
               <h2 className="text-3xl font-black leading-tight tracking-tight text-slate-800 md:text-4xl">
                 문의부터 완료까지 <span className="hub-accent-gradient">5단계</span>
               </h2>
-              <p className="mt-3 text-base text-slate-500">투명하게 진행합니다</p>
+              <p className="mt-3 text-base text-slate-600">투명하게 진행합니다</p>
             </div>
             {/* desktop connector row */}
             <div className="hub-process-grid mt-12">
@@ -628,7 +629,7 @@ export default function HomePage() {
               <h2 className="text-2xl font-black leading-tight tracking-tight text-slate-800 md:text-3xl">
                 전북 전 지역 <span className="hub-accent-gradient">다양한 시설</span>에서 작업
               </h2>
-              <p className="mx-auto mt-3 max-w-2xl text-sm text-slate-500">
+              <p className="mx-auto mt-3 max-w-2xl text-sm text-slate-600">
                 관공서·대형마트·프랜차이즈·아파트·상가까지. 규모에 관계없이 동일한 기준으로 현장 상담 후 진행합니다.
               </p>
             </div>
@@ -647,7 +648,7 @@ export default function HomePage() {
                     title={p.name}
                   >
                     {p.logoUrl ? (
-                      <img src={p.logoUrl} alt={`${p.name} 로고`} className="h-8 w-auto max-w-[90px] object-contain" loading="lazy" />
+                      <img src={p.logoUrl} alt={`${p.name} 로고`} width="90" height="32" className="h-8 w-auto max-w-[90px] object-contain" loading="lazy" />
                     ) : (
                       <span className="flex h-8 min-w-[50px] items-center justify-center rounded-md px-2.5 text-xs font-bold text-white" style={{ backgroundColor: p.color }}>
                         {p.symbol}
@@ -658,7 +659,7 @@ export default function HomePage() {
                 ))}
               </div>
             </div>
-            <p className="mt-4 text-center text-[10px] text-slate-400">
+            <p className="mt-4 text-center text-[10px] text-slate-600">
               * 시공·출장 경험이 있는 시설 예시이며, 공식 파트너쉽·계약 관계를 의미하지 않습니다.
             </p>
           </div>
@@ -672,13 +673,13 @@ export default function HomePage() {
               <h2 className="text-3xl font-black leading-tight tracking-tight text-slate-800 md:text-4xl">
                 전북 <span className="hub-accent-gradient">14 시·군</span>
               </h2>
-              <p className="mt-3 text-base text-slate-500">각 시·군 전담 기사가 30분 이내 현장 도착합니다</p>
+              <p className="mt-3 text-base text-slate-600">각 시·군 전담 기사가 30분 이내 현장 도착합니다</p>
             </div>
             <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7">
               {regions.map((r) => (
-                <Link key={r.city} href={`/${r.city}`} className="hub-city">
+                <Link key={r.city} href={`/${r.city}`} prefetch={false} className="hub-city">
                   <div className="text-sm font-bold text-slate-800">{r.city}</div>
-                  <div className="mt-1 text-[11px] text-slate-500">
+                  <div className="mt-1 text-[11px] text-slate-600">
                     {r.districts.length}개 {r.city.endsWith('시') ? '동' : '읍·면'}
                   </div>
                 </Link>
@@ -695,13 +696,14 @@ export default function HomePage() {
               <h2 className="text-3xl font-black leading-tight tracking-tight text-slate-800 md:text-4xl">
                 최근 <span className="hub-accent-gradient">현장 후기</span>
               </h2>
-              <p className="mt-3 text-base text-slate-500">실 작업 진행 과정과 결과</p>
+              <p className="mt-3 text-base text-slate-600">실 작업 진행 과정과 결과</p>
             </div>
             <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {recentPosts.map((post) => (
                 <Link
                   key={post.slug}
                   href={`/${post.city}/${post.slug}`}
+                  prefetch={false}
                   className="group overflow-hidden rounded-xl border border-slate-200 bg-white transition hover:-translate-y-1 hover:border-slate-300 hover:shadow-lg"
                 >
                   <div className="overflow-hidden bg-slate-100">
@@ -709,7 +711,7 @@ export default function HomePage() {
                   </div>
                   <div className="p-4">
                     <p className="line-clamp-2 text-sm font-bold leading-snug text-slate-800">{post.title}</p>
-                    <p className="mt-2 text-xs text-slate-500">{post.city}</p>
+                    <p className="mt-2 text-xs text-slate-600">{post.city}</p>
                   </div>
                 </Link>
               ))}
@@ -725,7 +727,7 @@ export default function HomePage() {
               <h2 className="text-3xl font-black leading-tight tracking-tight text-slate-800 md:text-4xl">
                 <span className="hub-accent-gradient">Before · After</span> 실 작업 결과
               </h2>
-              <p className="mt-3 text-base text-slate-500">좌우 드래그로 비교해보세요</p>
+              <p className="mt-3 text-base text-slate-600">좌우 드래그로 비교해보세요</p>
             </div>
             <div className="mt-10 mx-auto max-w-4xl space-y-8">
               {BEFORE_AFTER.map((pair) => (
@@ -749,7 +751,7 @@ export default function HomePage() {
               <h2 className="text-3xl font-black leading-tight tracking-tight text-slate-800 md:text-4xl">
                 <span className="hub-accent-gradient">전담 기사</span>가 직접 방문
               </h2>
-              <p className="mt-3 text-base text-slate-500">지역별 전담 · 경력 · 전문 분야 공개</p>
+              <p className="mt-3 text-base text-slate-600">지역별 전담 · 경력 · 전문 분야 공개</p>
             </div>
             <div className="mt-10 grid gap-5 md:grid-cols-3">
               {TEAM.map((m, idx) => (
@@ -791,18 +793,18 @@ export default function HomePage() {
               <h2 className="text-3xl font-black leading-tight tracking-tight text-slate-800 md:text-4xl">
                 현장 전문 <span className="hub-accent-gradient">장비 3종</span>
               </h2>
-              <p className="mt-3 text-base text-slate-500">상황에 맞는 장비로 정확하게 진단 · 해결합니다</p>
+              <p className="mt-3 text-base text-slate-600">상황에 맞는 장비로 정확하게 진단 · 해결합니다</p>
             </div>
             <div className="mt-10 grid gap-5 md:grid-cols-3">
               {EQUIPMENT.map((e) => (
                 <div key={e.name} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                  <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-[--color-accent]/10 text-4xl">{e.icon}</div>
+                  <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-[var(--color-accent)]/10 text-4xl">{e.icon}</div>
                   <h3 className="mt-5 text-lg font-black text-slate-800">{e.name}</h3>
-                  <p className="mt-1 text-xs text-slate-500">{e.purpose}</p>
+                  <p className="mt-1 text-xs text-slate-600">{e.purpose}</p>
                   <ul className="mt-4 space-y-1.5 border-t border-slate-100 pt-4 text-xs leading-relaxed text-slate-600">
                     {e.specs.map((s) => (
                       <li key={s} className="flex gap-2">
-                        <span className="text-[--color-primary]">✓</span>
+                        <span className="text-[var(--color-primary)]">✓</span>
                         <span>{s}</span>
                       </li>
                     ))}
@@ -821,14 +823,14 @@ export default function HomePage() {
               <h2 className="text-3xl font-black leading-tight tracking-tight text-slate-800 md:text-4xl">
                 투명한 <span className="hub-accent-gradient">견적 예시</span>
               </h2>
-              <p className="mt-3 text-base text-slate-500">실제 비용은 현장 상태에 따라 달라집니다</p>
+              <p className="mt-3 text-base text-slate-600">실제 비용은 현장 상태에 따라 달라집니다</p>
             </div>
             <div className="mt-10 grid gap-5 md:grid-cols-3">
               {PRICING_SAMPLES.map((p) => (
                 <div key={p.title} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
                   <div className="border-b border-dashed border-slate-300 pb-4">
                     <h3 className="text-lg font-black text-slate-800">{p.title}</h3>
-                    <p className="mt-1 text-xs text-slate-500">{p.subtitle}</p>
+                    <p className="mt-1 text-xs text-slate-600">{p.subtitle}</p>
                   </div>
                   <ul className="mt-4 space-y-2 text-sm">
                     {p.items.map((item) => (
@@ -840,13 +842,13 @@ export default function HomePage() {
                   </ul>
                   <div className="mt-4 flex justify-between rounded-lg bg-slate-50 px-4 py-3">
                     <span className="text-sm font-bold text-slate-700">예상 총액</span>
-                    <span className="font-mono font-black text-[--color-primary]">{p.total}</span>
+                    <span className="font-mono font-black text-[var(--color-primary)]">{p.total}</span>
                   </div>
-                  <p className="mt-3 text-[11px] leading-relaxed text-slate-400">{p.note}</p>
+                  <p className="mt-3 text-[11px] leading-relaxed text-slate-600">{p.note}</p>
                 </div>
               ))}
             </div>
-            <p className="mt-6 text-center text-xs text-slate-400">
+            <p className="mt-6 text-center text-xs text-slate-600">
               * 위 금액은 참고용 예시이며, 최종 견적은 현장 진단 후 동의 절차를 거쳐 확정됩니다.
             </p>
           </div>
@@ -860,7 +862,7 @@ export default function HomePage() {
               <h2 className="text-3xl font-black leading-tight tracking-tight text-slate-800 md:text-4xl">
                 막힘 <span className="hub-accent-gradient">4가지 주 원인</span>
               </h2>
-              <p className="mt-3 text-base text-slate-500">원인을 알면 재발을 막을 수 있습니다</p>
+              <p className="mt-3 text-base text-slate-600">원인을 알면 재발을 막을 수 있습니다</p>
             </div>
             <div className="mt-10 grid gap-5 sm:grid-cols-2">
               {CAUSES.map((c) => (
@@ -889,7 +891,7 @@ export default function HomePage() {
               <h2 className="text-3xl font-black leading-tight tracking-tight text-slate-800 md:text-4xl">
                 전북 <span className="hub-accent-gradient">실고객 평가</span>
               </h2>
-              <p className="mt-3 text-base text-slate-500">14 시·군 현장에서 받은 리뷰</p>
+              <p className="mt-3 text-base text-slate-600">14 시·군 현장에서 받은 리뷰</p>
             </div>
             <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
               {testimonials.map((t, i) => (
@@ -913,7 +915,7 @@ export default function HomePage() {
               <h2 className="text-3xl font-black leading-tight tracking-tight text-slate-800 md:text-4xl">
                 연락처를 <span className="hub-accent-gradient">남겨주세요</span>
               </h2>
-              <p className="mt-3 text-base text-slate-500">빠르게 회신드립니다</p>
+              <p className="mt-3 text-base text-slate-600">빠르게 회신드립니다</p>
             </div>
             <div className="mt-10">
               <ContactForm />
@@ -929,7 +931,7 @@ export default function HomePage() {
               <h2 className="text-3xl font-black leading-tight tracking-tight text-slate-800 md:text-4xl">
                 자주 묻는 <span className="hub-accent-gradient">질문</span>
               </h2>
-              <p className="mt-3 text-base text-slate-500">현장 출동 전 알려드리는 실제 답변</p>
+              <p className="mt-3 text-base text-slate-600">현장 출동 전 알려드리는 실제 답변</p>
             </div>
             <div className="mt-10 space-y-3">
               {mainFaq.map((item, idx) => (

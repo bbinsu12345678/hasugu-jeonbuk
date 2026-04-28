@@ -11,7 +11,7 @@ export default function FloatingCTA() {
           href={siteConfig.kakaoUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-md border border-[--color-border] bg-white text-[--color-primary] transition hover:bg-[--color-primary-soft]"
+          className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-md border border-[var(--color-border)] bg-white text-[var(--color-primary)] transition hover:bg-[var(--color-primary-soft)]"
           aria-label="카카오 문의"
         >
           <MessageCircle size={20} />
@@ -21,9 +21,8 @@ export default function FloatingCTA() {
         <a
           href={phoneLink()}
           className="btn-cta pulse-btn flex-1"
-          aria-label={`전화 상담 ${formatPhone()}`}
         >
-          <Phone size={18} />
+          <Phone size={18} aria-hidden="true" />
           <div className="flex flex-col items-start leading-tight">
             <span className="text-[11px] font-semibold opacity-80">
               24시 상담

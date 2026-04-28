@@ -44,6 +44,8 @@ export default function Partners() {
                   <img
                     src={p.logoUrl}
                     alt={`${p.name} 로고`}
+                    width="110"
+                    height="40"
                     className="h-10 w-auto max-w-[110px] rounded object-contain"
                     loading="lazy"
                   />
@@ -64,7 +66,7 @@ export default function Partners() {
           </div>
         </div>
 
-        <p className="mt-6 text-center text-xs text-slate-400">
+        <p className="mt-6 text-center text-xs text-slate-600">
           * 시공·출장 경험이 있는 시설 예시이며, 공식 파트너쉽·계약 관계를 의미하지 않습니다.
         </p>
       </div>

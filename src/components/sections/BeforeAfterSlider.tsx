@@ -93,7 +93,7 @@ export default function BeforeAfterSlider({
           BEFORE
         </span>
         {/* 우상단 AFTER 라벨 */}
-        <span className="pointer-events-none absolute right-3 top-3 rounded-md bg-[--color-accent] px-2.5 py-1 text-[11px] font-black tracking-wider text-white">
+        <span className="pointer-events-none absolute right-3 top-3 rounded-md bg-[var(--color-accent)] px-2.5 py-1 text-[11px] font-black tracking-wider text-white">
           AFTER
         </span>
       </div>

@@ -57,7 +57,7 @@ export default function ContactForm() {
   }
 
   return (
-    <section id="contact" className="bg-[--color-bg-light] py-16">
+    <section id="contact" className="bg-[var(--color-bg-light)] py-16">
       <div className="mx-auto max-w-2xl px-4 lg:px-6">
         {/* 섹션 타이틀 */}
         <div className="mb-10 text-center">
@@ -91,7 +91,7 @@ export default function ContactForm() {
               onChange={(e) =>
                 setFormData((prev) => ({ ...prev, name: e.target.value }))
               }
-              className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:border-[--color-primary] focus:ring-1 focus:ring-[--color-primary] focus:outline-none"
+              className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:border-[var(--color-primary)] focus:ring-1 focus:ring-[var(--color-primary)] focus:outline-none"
             />
           </div>
 
@@ -108,7 +108,7 @@ export default function ContactForm() {
               onChange={(e) =>
                 setFormData((prev) => ({ ...prev, phone: e.target.value }))
               }
-              className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:border-[--color-primary] focus:ring-1 focus:ring-[--color-primary] focus:outline-none"
+              className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:border-[var(--color-primary)] focus:ring-1 focus:ring-[var(--color-primary)] focus:outline-none"
             />
           </div>
 
@@ -124,7 +124,7 @@ export default function ContactForm() {
               onChange={(e) =>
                 setFormData((prev) => ({ ...prev, address: e.target.value }))
               }
-              className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:border-[--color-primary] focus:ring-1 focus:ring-[--color-primary] focus:outline-none"
+              className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:border-[var(--color-primary)] focus:ring-1 focus:ring-[var(--color-primary)] focus:outline-none"
             />
           </div>
 
@@ -140,14 +140,14 @@ export default function ContactForm() {
               onChange={(e) =>
                 setFormData((prev) => ({ ...prev, message: e.target.value }))
               }
-              className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:border-[--color-primary] focus:ring-1 focus:ring-[--color-primary] focus:outline-none"
+              className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:border-[var(--color-primary)] focus:ring-1 focus:ring-[var(--color-primary)] focus:outline-none"
             />
           </div>
 
           <button
             type="submit"
             disabled={status === 'sending'}
-            className="w-full rounded-lg bg-[--color-primary] py-3 text-sm font-semibold text-white transition hover:bg-[--color-primary-dark] disabled:opacity-50"
+            className="w-full rounded-lg bg-[var(--color-primary)] py-3 text-sm font-semibold text-white transition hover:bg-[var(--color-primary-dark)] disabled:opacity-50"
           >
             {status === 'sending' ? '전송 중...' : '문의하기'}
           </button>

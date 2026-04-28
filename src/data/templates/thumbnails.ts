@@ -14,6 +14,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import type { ServiceType } from '@/data/url-suffixes';
+import { imageUrl } from '@/lib/image-base';
 
 /** 한글 ServiceType → 폴더 슬러그 (영문) 매핑 */
 export const SERVICE_TO_SLUG: Record<ServiceType, string> = {
@@ -93,11 +94,11 @@ export function pickThumbnail(
   offset = 0,
 ): string {
   const pool = expandedPool(service);
-  if (pool.length === 0) return '/images/blog-content/placeholder.webp';
+  if (pool.length === 0) return imageUrl('/images/blog-content/placeholder.webp');
   // offset 을 큰 소수로 곱해 풀 전반에 분산 시킴.
   // hash + offset 이면 인접 인덱스만 선택돼 같은 원본의 30 변형만 반복되는 문제 해결.
   const scattered = hash + offset * 997;
-  return pool[Math.abs(scattered) % pool.length];
+  return imageUrl(pool[Math.abs(scattered) % pool.length]);
 }
 
 /**

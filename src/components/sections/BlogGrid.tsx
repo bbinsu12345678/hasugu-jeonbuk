@@ -20,6 +20,7 @@ export default function BlogGrid() {
             <Link
               key={post.slug}
               href={`/${post.city}/${post.slug}`}
+              prefetch={false}
               className="card-shadow overflow-hidden"
             >
               {/* 썸네일 */}
@@ -34,7 +35,7 @@ export default function BlogGrid() {
 
               {/* 제목 */}
               <div className="p-3 text-center">
-                <p className="line-clamp-2 text-sm font-bold text-gray-800 transition hover:text-[--color-primary]">
+                <p className="line-clamp-2 text-sm font-bold text-gray-800 transition hover:text-[var(--color-primary)]">
                   {post.title}
                 </p>
               </div>

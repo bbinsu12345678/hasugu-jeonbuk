@@ -12,7 +12,7 @@ export default function Hero() {
         <div>
           {/* 상단 뱃지 */}
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-white/95 backdrop-blur-md">
-            <ShieldCheck size={14} className="text-[--color-accent]" />
+            <ShieldCheck size={14} className="text-[var(--color-accent)]" />
             전북 14시군 · 24시 긴급출동
           </div>
 
@@ -23,7 +23,7 @@ export default function Hero() {
                 {line}
               </span>
             ))}
-            <span className="mt-2 block text-[--color-accent]">
+            <span className="mt-2 block text-[var(--color-accent)]">
               {siteConfig.seo.h1Accent}
             </span>
           </h1>
@@ -39,9 +39,8 @@ export default function Hero() {
             <a
               href={phoneLink()}
               className="btn-cta pulse-btn text-base"
-              aria-label={`전화 ${formatPhone()}`}
             >
-              <Phone size={18} />
+              <Phone size={18} aria-hidden="true" />
               <span>지금 전화 상담</span>
               <span className="tabular font-mono text-sm opacity-80">
                 {formatPhone()}
@@ -92,19 +91,22 @@ export default function Hero() {
         <div className="relative mx-auto w-full max-w-sm lg:max-w-none">
           <div className="card-glass p-2">
             <img
-              src="/images/main_bg.webp"
+              src="/images/main_bg-1200.webp"
+              srcSet="/images/main_bg-600.webp 600w, /images/main_bg-1200.webp 1200w, /images/main_bg.webp 1920w"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 600px"
               alt="전북하수구 배관 전문 해결"
               className="aspect-[4/5] w-full rounded-[calc(var(--radius-lg)-6px)] object-cover"
               loading="eager"
-              width={1920}
-              height={2400}
+              fetchPriority="high"
+              width={1200}
+              height={1500}
             />
           </div>
 
           {/* 플로팅 뱃지 */}
           <div className="absolute -left-4 bottom-6 hidden rounded-full bg-white px-4 py-2 shadow-lg md:flex md:items-center md:gap-2">
-            <span className="h-2 w-2 animate-pulse rounded-full bg-[--color-success]"></span>
-            <span className="text-xs font-bold text-[--color-primary-deep]">
+            <span className="h-2 w-2 animate-pulse rounded-full bg-[var(--color-success)]"></span>
+            <span className="text-xs font-bold text-[var(--color-primary-deep)]">
               지금 상담 가능
             </span>
           </div>

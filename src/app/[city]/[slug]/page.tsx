@@ -259,7 +259,8 @@ export default async function BlogPostPage({ params }: Props) {
               <Link
                 key={kw}
                 href="/"
-                className="rounded-full border border-[--color-primary] px-3 py-1 text-sm text-[--color-primary] transition hover:bg-[--color-primary] hover:text-white"
+                prefetch={false}
+                className="rounded-full border border-[var(--color-primary)] px-3 py-1 text-sm text-[var(--color-primary)] transition hover:bg-[var(--color-primary)] hover:text-white"
               >
                 {kw}
               </Link>
