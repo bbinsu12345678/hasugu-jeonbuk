@@ -19,6 +19,9 @@ const eslintConfig = defineConfig([
     "build/**",
     "next-env.d.ts",
     "measure-lh.js",
+    "measure-lh-deep.js",
+    "measure-lh-detail.js",
+    "scripts/clean-rsc-txt.js",
   ]),
 ]);
 
