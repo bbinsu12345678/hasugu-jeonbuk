@@ -7,12 +7,12 @@
  * 싱글톤 패턴 — 리렌더링 시 여러 인스턴스 생성 방지.
  */
 
-import { createClient as createSupabaseClient, type SupabaseClient } from '@supabase/supabase-js';
+import type { SupabaseClient } from '@supabase/supabase-js';
 
 let browserInstance: SupabaseClient | null = null;
 
-/** 브라우저/클라이언트사이드용 (anon key) */
-export function getSupabaseClient(): SupabaseClient {
+/** 브라우저/클라이언트사이드용 (anon key) — dynamic import 로 form-submit 시점 로드 */
+export async function getSupabaseClient(): Promise<SupabaseClient> {
   if (browserInstance) return browserInstance;
 
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
@@ -24,7 +24,8 @@ export function getSupabaseClient(): SupabaseClient {
     );
   }
 
-  browserInstance = createSupabaseClient(url, anonKey, {
+  const { createClient } = await import('@supabase/supabase-js');
+  browserInstance = createClient(url, anonKey, {
     auth: { persistSession: false },
   });
   return browserInstance;
@@ -42,7 +43,7 @@ export async function submitInquiry(input: {
   message?: string;
   sourceUrl?: string;
 }): Promise<string> {
-  const client = getSupabaseClient();
+  const client = await getSupabaseClient();
   const { data, error } = await client.rpc('submit_inquiry_hasugu', {
     p_name: input.name,
     p_phone: input.phone,
@@ -64,7 +65,7 @@ export async function submitSymptomLead(input: {
   city?: string;
   sourceUrl?: string;
 }): Promise<string> {
-  const client = getSupabaseClient();
+  const client = await getSupabaseClient();
   const { data, error } = await client.rpc('submit_symptom_lead_hasugu', {
     p_phone: input.phone,
     p_symptoms: input.symptoms,
