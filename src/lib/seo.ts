@@ -116,7 +116,7 @@ export function generateLocalBusinessJsonLd() {
     },
     ...(kakaoUrl ? { sameAs: [kakaoUrl] } : {}),
     image: `${siteConfig.domain}/images/og/jeonbuk.png`,
-    logo: `${siteConfig.domain}/images/logo.svg`,
+    logo: `${siteConfig.domain}/images/logo.png`,
   };
 }
 
@@ -228,7 +228,7 @@ export function generateArticleJsonLd(post: BlogPost) {
       url: siteConfig.domain,
       logo: {
         '@type': 'ImageObject',
-        url: `${siteConfig.domain}/images/logo.svg`,
+        url: `${siteConfig.domain}/images/logo.png`,
       },
     },
     mainEntityOfPage: {
